@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+
+.background{
+    background-image: url(background.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.box{
+    width: 600px;
+    height: 400px;
+    background: rgba(240, 240, 240, 0.48);
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    border: 29px 29px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+#formSec{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+#formSec input{
+padding:13px;
+background: transparent;
+border: 1px solid purple;
+border-radius: 20px;
+font-size: 20px;
+font-weight: 600;
+}
+#formSec input:focus-visible{
+    outline: 1px solid purple;
+}
+#formSec button{
+padding:13px;
+background-color: purple;
+color: white;
+border: 1px solid purple;
+border-radius: 20px;
+font-size: 20px;
+}
+.box h2{
+    font-size: 40px;
+    color: rgb(99, 13, 99);
+}
+.box h3{
+    font-size: 32px;
+    color: rgb(90, 59, 90);
+}
+
+@media (max-width: 767px) {
+   
+    .box{
+        width: 300px;
+        height: 300px;
+        }
+        .box h2{
+            font-size: 24px;
+            color: rgb(99, 13, 99);
+        }
+        .box h3{
+            font-size: 20px;
+            color: rgb(90, 59, 90);
+        }
+    
+}
